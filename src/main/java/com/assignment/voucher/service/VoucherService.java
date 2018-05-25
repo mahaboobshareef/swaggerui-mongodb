@@ -3,6 +3,8 @@
  */
 package com.assignment.voucher.service;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +36,11 @@ public class VoucherService {
 		
 		return voucherRepository.save(voucherDetails);
 
+	}
+
+	public List<Voucher> getAllVoucherDetails() {
+		// TODO Auto-generated method stub
+		return voucherRepository.findAll();
 	}
 
 }
